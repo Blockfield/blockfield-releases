@@ -13,7 +13,7 @@ body:
     attributes:
       label: Версия сборки
       description: Тег релиза со страницы [Releases](https://github.com/netherg-io/blockfield-releases/releases)
-      placeholder: "например, v1.4.2"
+      placeholder: "например, v2.22.3"
     validations:
       required: true
 
