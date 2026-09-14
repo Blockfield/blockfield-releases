@@ -51,7 +51,7 @@
 - 🎖️ **6 специализированных классов**: штурмовик, снайпер, медик, инженер, поддержка и разведчик — каждый со своим снаряжением и способностями.
 - 🚜 **Военная техника**: бронемашины и транспортные средства для быстрой переброски бойцов и огневого прикрытия.
 - ⚡ **Операция «Железный фронт»**: уникальные театры военных действий, динамические фронтовые зоны и слаженная командная координация.
-- 🌐 **Публичный игровой сервер**: `minecraft.play.nether.pp.ua:25565`
+- 🌐 **Публичный игровой сервер**: `play.blockfield.pro:25565`
 
 ---
 
@@ -76,7 +76,7 @@
 1. Скачайте [**Blockfield.mrpack**](https://github.com/netherg-io/blockfield-releases/releases/latest/download/Blockfield.mrpack).
 2. В Modrinth App нажмите **«Import from file»** / перетащите `.mrpack` в окно приложения.
 3. Дождитесь окончания автоматической загрузки всех модов.
-4. Адрес сервера для подключения: `minecraft.play.nether.pp.ua:25565`.
+4. Адрес сервера для подключения: `play.blockfield.pro:25565`.
 
 </details>
 
@@ -87,7 +87,7 @@
 2. Установите [Fabric Loader 1.21.1](https://fabricmc.net/use/installer/) (версия загрузчика 0.16.x+).
 3. Скачайте архив [**Blockfield-client.zip**](https://github.com/netherg-io/blockfield-releases/releases/latest/download/Blockfield-client.zip).
 4. Распакуйте файлы архива в каталог `.minecraft` (`%appdata%\.minecraft` на Windows или `~/.minecraft` на Linux).
-5. Запустите профиль Fabric 1.21.1 и подключитесь к серверу `minecraft.play.nether.pp.ua:25565`.
+5. Запустите профиль Fabric 1.21.1 и подключитесь к серверу `play.blockfield.pro:25565`.
 
 </details>
 
@@ -130,7 +130,7 @@ Get-FileHash Blockfield-client.zip -Algorithm SHA256
 
 <details>
 <summary><b>Какой IP-адрес игрового сервера?</b></summary>
-Основной публичный сервер проекта: <code>minecraft.play.nether.pp.ua:25565</code>. В официальном лаунчере и инстансе Prism он преднастроен по умолчанию.
+Основной публичный сервер проекта: <code>play.blockfield.pro:25565</code>. В официальном лаунчере и инстансе Prism он преднастроен по умолчанию.
 </details>
 
 <details>
