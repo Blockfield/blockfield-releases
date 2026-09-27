@@ -12,7 +12,7 @@ body:
     id: version
     attributes:
       label: Версия сборки
-      description: Тег релиза со страницы [Releases](https://github.com/netherg-io/blockfield-releases/releases)
+      description: Тег релиза со страницы [Releases](https://github.com/Blockfield/blockfield-releases/releases)
       placeholder: "например, v2.22.3"
     validations:
       required: true
@@ -90,7 +90,7 @@ body:
     attributes:
       label: Проверка
       options:
-        - label: Я поискал(а) похожие [issues](https://github.com/netherg-io/blockfield-releases/issues?q=is%3Aissue) и не нашёл(ла) дубликат
+        - label: Я поискал(а) похожие [issues](https://github.com/Blockfield/blockfield-releases/issues?q=is%3Aissue) и не нашёл(ла) дубликат
           required: true
         - label: Проблема воспроизводится на последней версии сборки
           required: false
