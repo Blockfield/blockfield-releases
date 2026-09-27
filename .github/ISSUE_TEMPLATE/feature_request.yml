@@ -36,5 +36,5 @@ body:
     attributes:
       label: Проверка
       options:
-        - label: Я поискал(а) похожие [issues](https://github.com/netherg-io/blockfield-releases/issues?q=is%3Aissue) и не нашёл(ла) дубликат
+        - label: Я поискал(а) похожие [issues](https://github.com/Blockfield/blockfield-releases/issues?q=is%3Aissue) и не нашёл(ла) дубликат
           required: true
