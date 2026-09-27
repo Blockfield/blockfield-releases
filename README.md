@@ -10,7 +10,7 @@
 [![Latest Release](https://img.shields.io/github/v/release/netherg-io/blockfield-releases?label=Релиз&style=for-the-badge&color=2ea44f)](https://github.com/netherg-io/blockfield-releases/releases)
 [![Minecraft](https://img.shields.io/badge/Minecraft-1.21.1%20Fabric-orange?style=for-the-badge)](https://fabricmc.net/)
 [![Java](https://img.shields.io/badge/Java-21%20%2F%20Temurin-red?style=for-the-badge)](https://adoptium.net/)
-[![Launcher](https://img.shields.io/badge/Официальный%20Лаунчер-Windows%20%7C%20Linux-blue?style=for-the-badge)](https://github.com/netherg-io/blockfield-launcher-releases)
+[![Launcher](https://img.shields.io/badge/Официальный%20Лаунчер-Windows%20%7C%20Linux-blue?style=for-the-badge)](https://github.com/Blockfield/Blockfield-Launcher)
 [![Formats](https://img.shields.io/badge/Форматы-mrpack%20%7C%20Prism%20%7C%20ZIP-brightgreen?style=for-the-badge)](https://github.com/netherg-io/blockfield-releases/releases)
 
 <br />
@@ -26,13 +26,13 @@
 В данном репозитории публикуются официальные клиентские дистрибутивы и модпаки проекта **Blockfield**, собранные и верифицированные в рамках автоматизированного CI/CD пайплайна.
 
 > [!IMPORTANT]
-> **Рекомендуемый способ игры — [Blockfield Launcher](https://github.com/netherg-io/blockfield-launcher-releases).**  
+> **Рекомендуемый способ игры — [Blockfield Launcher](https://github.com/Blockfield/Blockfield-Launcher).**  
 > Официальный лаунчер на базе Tauri 2 и Rust обеспечивает максимальное быстродействие, автоматически настраивает подходящую среду Java, проверяет целостность файлов и моментально обновляет моды в один клик.  
 > Если вы предпочитаете сторонние лаунчеры (Prism Launcher, Modrinth App, MultiMC) или ручную установку, выберите один из вариантов ниже.
 
 | Формат / Пакет | Файл | Назначение / Лаунчер | Ссылка на загрузку |
 | :--- | :--- | :--- | :--- |
-| **Официальный лаунчер** | `.exe` / `.AppImage` / `.deb` / `.rpm` | Рекомендуемый автономный лаунчер со встроенной средой Java и автообновлениями | [**Скачать лаунчер**](https://github.com/netherg-io/blockfield-launcher-releases/releases/latest) |
+| **Официальный лаунчер** | `.exe` / `.AppImage` / `.deb` / `.rpm` | Рекомендуемый автономный лаунчер со встроенной средой Java и автообновлениями | [**Скачать лаунчер**](https://github.com/Blockfield/Blockfield-Launcher/releases/latest) |
 | **Prism Launcher / MultiMC** | `Blockfield-prism.zip` | Готовый импортируемый инстанс с автоматической синхронизацией модов через Packwiz Bootstrap | [**Скачать ZIP**](https://github.com/netherg-io/blockfield-releases/releases/latest/download/Blockfield-prism.zip) |
 | **Modrinth Modpack** | `Blockfield.mrpack` | Стандартный пакет Modrinth для Modrinth App, Prism Launcher, ATLauncher | [**Скачать mrpack**](https://github.com/netherg-io/blockfield-releases/releases/latest/download/Blockfield.mrpack) |
 | **Полный архив клиента** | `Blockfield-client.zip` | Полный набор модов, конфигов и настроек для ручной распаковки в директорию `.minecraft` | [**Скачать ZIP**](https://github.com/netherg-io/blockfield-releases/releases/latest/download/Blockfield-client.zip) |
@@ -125,7 +125,7 @@ Get-FileHash Blockfield-client.zip -Algorithm SHA256
 
 <details>
 <summary><b>Какая версия Java требуется для игры?</b></summary>
-Для работы клиента требуется <b>Java 21</b> (рекомендуется <a href="https://adoptium.net/">Eclipse Temurin 21 LTS</a>). Если вы используете официальный <a href="https://github.com/netherg-io/blockfield-launcher-releases">Blockfield Launcher</a>, среда Java скачивается и настраивается автоматически.
+Для работы клиента требуется <b>Java 21</b> (рекомендуется <a href="https://adoptium.net/">Eclipse Temurin 21 LTS</a>). Если вы используете официальный <a href="https://github.com/Blockfield/Blockfield-Launcher">Blockfield Launcher</a>, среда Java скачивается и настраивается автоматически.
 </details>
 
 <details>
@@ -148,7 +148,7 @@ Get-FileHash Blockfield-client.zip -Algorithm SHA256
 ## 💬 Поддержка
 
 - **Баг-трекер**: [GitHub Issues](https://github.com/netherg-io/blockfield-releases/issues)
-- **Официальный лаунчер**: [Blockfield Launcher](https://github.com/netherg-io/blockfield-launcher-releases)
+- **Официальный лаунчер**: [Blockfield Launcher](https://github.com/Blockfield/Blockfield-Launcher)
 
 ---
 
