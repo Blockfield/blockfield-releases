@@ -7,12 +7,12 @@
 **Соберите отряд. Выберите класс. Вступайте в бой.**<br />
 Официальные клиентские дистрибутивы Blockfield.
 
-[![Релиз](https://img.shields.io/github/v/release/netherg-io/blockfield-releases?label=release&color=E9A426&style=flat-square)](https://github.com/netherg-io/blockfield-releases/releases/latest)
+[![Релиз](https://img.shields.io/github/v/release/Blockfield/blockfield-releases?label=release&color=E9A426&style=flat-square)](https://github.com/Blockfield/blockfield-releases/releases/latest)
 [![Minecraft](https://img.shields.io/badge/Minecraft-1.21.1-E9A426?style=flat-square)](https://blockfield.pro)
 [![Fabric](https://img.shields.io/badge/loader-Fabric-292524?style=flat-square)](https://fabricmc.net/)
 [![Java](https://img.shields.io/badge/Java-21-292524?style=flat-square)](https://adoptium.net/)
 
-**[Играть через Blockfield Launcher](https://github.com/Blockfield/Blockfield-Launcher/releases/latest)** · [Скачать клиент](https://github.com/netherg-io/blockfield-releases/releases/latest) · [Сайт проекта](https://blockfield.pro)
+**[Играть через Blockfield Launcher](https://github.com/Blockfield/Blockfield-Launcher/releases/latest)** · [Скачать клиент](https://github.com/Blockfield/blockfield-releases/releases/latest) · [Сайт проекта](https://blockfield.pro)
 
 </div>
 
@@ -26,12 +26,12 @@
 
 | Дистрибутив | Для чего | Скачать |
 | :--- | :--- | :--- |
-| **Prism Launcher** | Готовый инстанс с обновлением через packwiz | [Blockfield-prism.zip](https://github.com/netherg-io/blockfield-releases/releases/latest/download/Blockfield-prism.zip) |
-| **Modrinth** | Импорт в лаунчер с поддержкой `.mrpack` | [Blockfield.mrpack](https://github.com/netherg-io/blockfield-releases/releases/latest/download/Blockfield.mrpack) |
-| **Полный клиент** | Ручная установка модов и конфигурации | [Blockfield-client.zip](https://github.com/netherg-io/blockfield-releases/releases/latest/download/Blockfield-client.zip) |
-| **Контрольные суммы** | Проверка целостности скачанных файлов | [SHA256SUMS](https://github.com/netherg-io/blockfield-releases/releases/latest/download/SHA256SUMS) |
+| **Prism Launcher** | Готовый инстанс с обновлением через packwiz | [Blockfield-prism.zip](https://github.com/Blockfield/blockfield-releases/releases/latest/download/Blockfield-prism.zip) |
+| **Modrinth** | Импорт в лаунчер с поддержкой `.mrpack` | [Blockfield.mrpack](https://github.com/Blockfield/blockfield-releases/releases/latest/download/Blockfield.mrpack) |
+| **Полный клиент** | Ручная установка модов и конфигурации | [Blockfield-client.zip](https://github.com/Blockfield/blockfield-releases/releases/latest/download/Blockfield-client.zip) |
+| **Контрольные суммы** | Проверка целостности скачанных файлов | [SHA256SUMS](https://github.com/Blockfield/blockfield-releases/releases/latest/download/SHA256SUMS) |
 
-Все версии и заметки к ним находятся в [Releases](https://github.com/netherg-io/blockfield-releases/releases). Этот репозиторий хранит готовые клиентские сборки и обращения игроков.
+Все версии и заметки к ним находятся в [Releases](https://github.com/Blockfield/blockfield-releases/releases). Этот репозиторий хранит готовые клиентские сборки и обращения игроков.
 
 ## Подключение
 
@@ -88,7 +88,7 @@ Get-FileHash Blockfield-client.zip -Algorithm SHA256
 
 ## Поддержка
 
-[Сообщить об ошибке клиента](https://github.com/netherg-io/blockfield-releases/issues) · [Ошибка лаунчера](https://github.com/Blockfield/Blockfield-Launcher/issues)
+[Сообщить об ошибке клиента](https://github.com/Blockfield/blockfield-releases/issues) · [Ошибка лаунчера](https://github.com/Blockfield/Blockfield-Launcher/issues)
 
 Укажите версию сборки, ОС, способ установки и шаги воспроизведения. При сбое приложите `logs/latest.log` или отчёт из `crash-reports/`, предварительно удалив личные данные и токены.
 
