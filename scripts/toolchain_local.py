@@ -52,7 +52,9 @@ def java_home():
         if java is None:
             continue
         home = Path(java).resolve().parents[1]
-        if (home / "release").is_file() and shutil.which("javac", path=str(home / "bin")):
+        if (home / "release").is_file() and shutil.which(
+            "javac", path=str(home / "bin")
+        ):
             return home
     # No JDK layout on PATH (wrapper scripts): the vendored core runs the
     # wrapper java from the filtered PATH with JAVA_HOME unset.
