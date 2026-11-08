@@ -91,6 +91,9 @@ class JavaHome(unittest.TestCase):
             real = home / "bin" / java_name
             real.write_text("#!/bin/sh\nexit 0\n")
             real.chmod(0o755)
+            javac = home / "bin" / java_name.replace("java", "javac")
+            javac.write_text("#!/bin/sh\nexit 0\n")
+            javac.chmod(0o755)
             (home / "release").write_text('JAVA_VERSION="21"\n')
             env = os.environ.copy()
             env["PATH"] = os.pathsep.join((str(shim), str(home / "bin")))
@@ -112,12 +115,35 @@ class JavaHome(unittest.TestCase):
             real = home / "bin" / java_name
             real.write_text("#!/bin/sh\nexit 0\n")
             real.chmod(0o755)
+            javac = home / "bin" / java_name.replace("java", "javac")
+            javac.write_text("#!/bin/sh\nexit 0\n")
+            javac.chmod(0o755)
             (home / "release").write_text('JAVA_VERSION="21"\n')
             env = os.environ.copy()
             env["PATH"] = os.pathsep.join((str(launcher), str(home / "bin")))
             env.pop("JAVA_HOME", None)
             with unittest.mock.patch.dict(os.environ, env, clear=True):
                 self.assertEqual(java_home(), real.resolve().parents[1])
+
+    def test_jre_ahead_of_jdk_picks_jdk(self):
+        # A JRE home carries `release` too but has no javac.
+        java_name = "java.exe" if os.name == "nt" else "java"
+        with tempfile.TemporaryDirectory() as tmp:
+            homes = {}
+            for name, tools in (("jre", ("java",)), ("jdk", ("java", "javac"))):
+                home = Path(tmp) / name
+                (home / "bin").mkdir(parents=True)
+                for tool in tools:
+                    exe = home / "bin" / java_name.replace("java", tool)
+                    exe.write_text("#!/bin/sh\nexit 0\n")
+                    exe.chmod(0o755)
+                (home / "release").write_text('JAVA_VERSION="21"\n')
+                homes[name] = home
+            env = os.environ.copy()
+            env["PATH"] = os.pathsep.join(str(homes[n] / "bin") for n in ("jre", "jdk"))
+            env.pop("JAVA_HOME", None)
+            with unittest.mock.patch.dict(os.environ, env, clear=True):
+                self.assertEqual(java_home(), homes["jdk"].resolve())
 
     def test_wrapper_only_path_returns_none(self):
         # Wrapper scripts with no JDK `release` on PATH: the vendored core

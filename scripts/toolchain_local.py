@@ -41,7 +41,8 @@ def java_home():
     # Version-manager shims win a raw-PATH lookup and resolve into the
     # manager dir: search the shim-filtered child env and accept only a
     # candidate whose home holds the JDK 9+ `release` marker (a launcher in
-    # any other bin/ dir has a bin/java beside it, but no `release`).
+    # any other bin/ dir has a bin/java beside it, but no `release`) and
+    # javac (a JRE also carries `release`; quality.py compiles with javac).
     from toolchain import child_env  # lazy: the core imports this module
 
     for entry in child_env()["PATH"].split(os.pathsep):
@@ -51,7 +52,7 @@ def java_home():
         if java is None:
             continue
         home = Path(java).resolve().parents[1]
-        if (home / "release").is_file():
+        if (home / "release").is_file() and shutil.which("javac", path=str(home / "bin")):
             return home
     # No JDK layout on PATH (wrapper scripts): the vendored core runs the
     # wrapper java from the filtered PATH with JAVA_HOME unset.
